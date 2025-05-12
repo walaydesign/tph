@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委辦公司資訊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'uod5vgt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body class="theme-green">
+    
+    <div class="login">
+        <h1>tph資訊系統</h1>
+        <div>
+            <div class="login__item">
+                <label for="">帳號</label>
+                <input type="text">
+            </div>
+            <div class="login__item">
+                <label for="">密碼</label>
+                <input type="password">
+            </div>
+        </div>
+        <div class="login__bottom">
+            <div class="login__checkbox">
+                <input type="checkbox" id="remember">
+                <label for="remember">記住我</label>
+            </div>
+            <button class="btn btn-fill-lg">登入</button>
+        </div>
+    </div>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery-ui.min.js"></script>
+    <script src="./public/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委辦公司資訊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'uod5vgt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body class="theme-blue">
+    <header class="header">
+        <nav class="header__nav">
+            <ul>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">基本資料管理</p>
+                    <ul>
+                        <li><a href="">證照所有人</a></li>
+                        <li><a href="">證照</a></li>
+                        <li><a href="">委辦公司</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">委辦管理</p>
+                    <ul>
+                        <li><a href="">技士委辦</a></li>
+                        <li><a href="">公司委辦</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title active">報表管理</p>
+                    <ul>
+                        <li><a href="" class="active">公司委辦到期</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">歷史紀錄管理</p>
+                    <ul>
+                        <li><a href="">證照所有人紀錄</a></li>
+                        <li><a href="">證照紀錄</a></li>
+                        <li><a href="">委辦公司紀錄</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <p class="header__user">Zoey</p>
+    </header>
+
+    <main class="main">
+        <div class="page-head">
+            <ul class="breadcrumb">
+                <li><a href="">報表管理</a></li>
+                <li><a href="" class="active">公司委辦到期</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="expiration">
+            <div class="form-item">
+                <label for="">日期</label>
+                <div class="c-form-item-duration">
+                    <input type="text" placeholder="請選擇" id="from" class="form-item__main datepick">
+                    <span>~</span>
+                    <input type="text" placeholder="請選擇" id="to" class="form-item__main datepick">
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="">發票</label>
+                <select name="" id="" class="form-item__main">
+                    <option value="">請選擇</option>
+                </select>
+            </div>
+            <div class="expiration__btn">
+                <a href="" class="btn btn-border">Excel總表下載</a>
+                <a href="" class="btn btn-border">Word下載</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery-ui.min.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script>
+        $( function() {
+            $( "#from" ).datepicker();
+            $( "#to" ).datepicker();
+        } );
+    </script>
+</body>
+</html>

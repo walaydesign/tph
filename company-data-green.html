@@ -20,48 +20,38 @@
         })(document);
     </script>
 </head>
-<body class="theme-blue">
+<body class="theme-green">
     <header class="header">
         <nav class="header__nav">
             <ul>
                 <li class="c-header-nav-item has-dropdown">
                     <p class="c-header-nav-item__title active">基本資料管理</p>
                     <ul>
-                        <li><a href="" class="active">委辦公司資訊</a></li>
-                        <li><a href="">修改證照所有人資訊</a></li>
+                        <li><a href="">證照所有人</a></li>
+                        <li><a href="">證照</a></li>
+                        <li><a href="" class="active">委辦公司</a></li>
                     </ul>
                 </li>
                 <li class="c-header-nav-item has-dropdown">
                     <p class="c-header-nav-item__title">委辦管理</p>
                     <ul>
-                        <li><a href="">選項1</a></li>
-                        <li><a href="">選項2</a></li>
+                        <li><a href="">技士委辦</a></li>
+                        <li><a href="">公司委辦</a></li>
                     </ul>
                 </li>
                 <li class="c-header-nav-item has-dropdown">
                     <p class="c-header-nav-item__title">報表管理</p>
                     <ul>
-                        <li><a href="">選項1</a></li>
-                        <li><a href="">選項2</a></li>
-                    </ul>
-                </li>
-                <li class="c-header-nav-item has-dropdown">
-                    <p class="c-header-nav-item__title">到期管理</p>
-                    <ul>
-                        <li><a href="">選項1</a></li>
-                        <li><a href="">選項2</a></li>
+                        <li><a href="">公司委辦到期</a></li>
                     </ul>
                 </li>
                 <li class="c-header-nav-item has-dropdown">
                     <p class="c-header-nav-item__title">歷史紀錄管理</p>
                     <ul>
-                        <li><a href="">委辦公司紀錄內容</a></li>
-                        <li><a href="">選項2</a></li>
+                        <li><a href="">證照所有人紀錄</a></li>
+                        <li><a href="">證照紀錄</a></li>
+                        <li><a href="">委辦公司紀錄</a></li>
                     </ul>
-                </li>
-                <!-- 加一個沒有子選單的 -->
-                <li class="c-header-nav-item">
-                    <p class="c-header-nav-item__title">沒有子選單</p>
                 </li>
             </ul>
         </nav>
@@ -128,7 +118,97 @@
             </button>
         </div>
 
-        <table class="table"></table>
+        <div class="table">
+            <p class="table__total">總共3筆</p>
+            <div class="table__wrapper">
+                <div class="table__inner has-func">
+                    <table class="table__main">
+                        <tr>
+                            <th><span>公司統一編號</span></th>
+                            <th><span>公司編號</span></th>
+                            <th><span>公司名稱</span></th>
+                            <th><span>公司電話</span></th>
+                            <th><span>公司傳真</span></th>
+                            <th><span>公司營業地址</span></th>
+                            <th><span>公司通訊地址</span></th>
+                            <th><span>負責人</span></th>
+                            <th><span>附回郵</span></th>
+                            <th><span>時間</span></th>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>1234567</span></td>
+                            <td><span>1234567</span></td>
+                            <td><span>均順機電有限公司</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)新北市板橋區自強新村68號(1樓)</span></td>
+                            <td><span>劉芳君</span></td>
+                            <td><span>無</span></td>
+                            <td><span>2025-01-02</span></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>1234567</span></td>
+                            <td><span>1234567</span></td>
+                            <td><span>均順機電有限公司</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)</span></td>
+                            <td><span>劉芳君</span></td>
+                            <td><span>無</span></td>
+                            <td><span>2025-01-02</span></td>
+                        </tr>
+                    </table>
+                    <table class="table__function">
+                        <tr class="table__function-th">
+                            <th><span>動作</span></th>
+                        </tr>
+                        <tr>
+                            <td class="c-table-btns">
+                                <div class="c-table-btns__wrapper">
+                                    <a href="" class="btn btn-light">修改</a>
+                                    <a href="" class="btn btn-light">內容</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="c-table-btns">
+                                <div class="c-table-btns__wrapper">
+                                    <a href="" class="btn btn-light">修改</a>
+                                    <a href="" class="btn btn-light">內容</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12.5H5" stroke="#BBC6D0" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5.5L5 12.5L12 19.5" stroke="#BBC6D0" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <ul>
+                <li><a href="" class="active">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+            </ul>
+            <a href="">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12.5H19" stroke="#BBC6D0" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5.5L19 12.5L12 19.5" stroke="#BBC6D0" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
     </main>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/common.js"></script>
 </body>
 </html>

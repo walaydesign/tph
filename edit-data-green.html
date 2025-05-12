@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委辦公司資訊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'uod5vgt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body class="theme-green">
+    <header class="header">
+        <nav class="header__nav">
+            <ul>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title active">基本資料管理</p>
+                    <ul>
+                        <li><a href="">證照所有人</a></li>
+                        <li><a href="">證照</a></li>
+                        <li><a href="" class="active">委辦公司</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">委辦管理</p>
+                    <ul>
+                        <li><a href="">技士委辦</a></li>
+                        <li><a href="">公司委辦</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">報表管理</p>
+                    <ul>
+                        <li><a href="">公司委辦到期</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">歷史紀錄管理</p>
+                    <ul>
+                        <li><a href="">證照所有人紀錄</a></li>
+                        <li><a href="">證照紀錄</a></li>
+                        <li><a href="">委辦公司紀錄</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <p class="header__user">Zoey</p>
+    </header>
+
+    <main class="main">
+        <div class="page-head">
+            <ul class="breadcrumb">
+                <li><a href="">基本資料管理</a></li>
+                <li><a href="" class="active">委辦公司資訊</a></li>
+            </ul>
+        </div>
+
+        <form action="" class="form">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">勾選欄位</label>
+                        <input class="form-item__main" type="text" placeholder="請輸入">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">姓名</label>
+                        <input class="form-item__main" type="text" placeholder="請輸入">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">性別</label>
+                        <select name="" id="" class="form-item__main">
+                            <option value="">請選擇</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">報稅</label>
+                        <select name="" id="" class="form-item__main">
+                            <option value="">請選擇</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">生日</label>
+                        <input type="text" placeholder="請選擇" id="birthday" class="form-item__main datepick">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">電話</label>
+                        <input type="number" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">行動電話</label>
+                        <input type="number" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">傳真</label>
+                        <input type="number" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">辦公室電話</label>
+                        <input type="number" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">電子郵件</label>
+                        <input type="email" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">籍貫</label>
+                        <input type="text" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">工作地址</label>
+                        <div class="c-form-item-address">
+                            <input class="c-form-item-address__num form-item__main" type="number" placeholder="郵遞區號">
+                            <input class="c-form-item-address__main form-item__main" type="address" placeholder="請輸入地址">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">通訊地址</label>
+                        <div class="c-form-item-address">
+                            <input class="c-form-item-address__num form-item__main" type="number" placeholder="郵遞區號">
+                            <input class="c-form-item-address__main form-item__main" type="address" placeholder="請輸入地址">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">戶籍地址</label>
+                        <div class="c-form-item-address">
+                            <input class="c-form-item-address__num form-item__main" type="number" placeholder="郵遞區號">
+                            <input class="c-form-item-address__main form-item__main" type="address" placeholder="請輸入地址">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">介紹人</label>
+                        <input type="text" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">介紹人電話</label>
+                        <input type="number" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item">
+                        <label for="">介紹人行動</label>
+                        <input type="text" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">寄發/匯款</label>
+                        <input type="text" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">備註</label>
+                        <input type="text" placeholder="請輸入" class="form-item__main">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">備註</label>
+                        <div class="c-form-item-checkbox">
+                            <div class="c-form-item-checkbox__item">
+                                <input type="checkbox" id="item-1">
+                                <label for="item-1">勾選選項</label>
+                            </div>
+                            <div class="c-form-item-checkbox__item">
+                                <input type="checkbox" id="item-2">
+                                <label for="item-2">勾選選項</label>
+                            </div>
+                            <div class="c-form-item-checkbox__item">
+                                <input type="checkbox" id="item-3">
+                                <label for="item-3">勾選選項</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item c-form-item-file idcard">
+                        <label for="">身分證</label>
+                        <div class="c-form-item-file__upload">
+                            <span>上傳</span>
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.93268 14.9963V11.8557C1.93268 11.5796 2.15654 11.3557 2.43268 11.3557C2.70882 11.3557 2.93268 11.5796 2.93268 11.8557V14.9963C2.93268 15.2803 3.04539 15.5534 3.24615 15.7542C3.44685 15.9547 3.71923 16.0676 4.00299 16.0676H14.9971C15.2809 16.0675 15.5533 15.9548 15.754 15.7542C15.9547 15.5534 16.0674 15.2803 16.0674 14.9963V11.8557C16.0674 11.5796 16.2913 11.3557 16.5674 11.3557C16.8435 11.3558 17.0674 11.5796 17.0674 11.8557V14.9963C17.0674 15.5455 16.8493 16.0729 16.461 16.4612C16.0728 16.8493 15.5461 17.0675 14.9971 17.0676H4.00299C3.45402 17.0676 2.92735 16.8493 2.53912 16.4612C2.15083 16.0729 1.93268 15.5455 1.93268 14.9963Z" fill="white"/>
+                                <path d="M9.14596 2.07906C9.34122 1.8838 9.6587 1.8838 9.85397 2.07906L13.7797 6.00485C13.975 6.20011 13.975 6.51759 13.7797 6.71285C13.5845 6.90779 13.2679 6.90781 13.0727 6.71285L9.49947 3.13961L5.92721 6.71285C5.73201 6.9078 5.41538 6.9078 5.22018 6.71285C5.02491 6.51759 5.02491 6.20011 5.22018 6.00485L9.14596 2.07906L9.49947 2.43258H9.50045L9.14596 2.07906Z" fill="white"/>
+                                <path d="M9 11.8555V2.43262C9 2.15647 9.22386 1.93262 9.5 1.93262C9.77614 1.93262 10 2.15647 10 2.43262V11.8555C10 12.1316 9.77614 12.3555 9.5 12.3555C9.22386 12.3555 9 12.1316 9 11.8555Z" fill="white"/>
+                            </svg>
+                            <input type="file">
+                        </div>
+                        <div class="c-form-item-file__pic">
+                            <div class="c-form-item-file__pic-main">
+                                <img src="https://images.unsplash.com/photo-1743784412612-668571c271bd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <div class="btn-upload">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.93268 14.9963V11.8557C1.93268 11.5796 2.15654 11.3557 2.43268 11.3557C2.70882 11.3557 2.93268 11.5796 2.93268 11.8557V14.9963C2.93268 15.2803 3.04539 15.5534 3.24615 15.7542C3.44685 15.9547 3.71923 16.0676 4.00299 16.0676H14.9971C15.2809 16.0675 15.5533 15.9548 15.754 15.7542C15.9547 15.5534 16.0674 15.2803 16.0674 14.9963V11.8557C16.0674 11.5796 16.2913 11.3557 16.5674 11.3557C16.8435 11.3558 17.0674 11.5796 17.0674 11.8557V14.9963C17.0674 15.5455 16.8493 16.0729 16.461 16.4612C16.0728 16.8493 15.5461 17.0675 14.9971 17.0676H4.00299C3.45402 17.0676 2.92735 16.8493 2.53912 16.4612C2.15083 16.0729 1.93268 15.5455 1.93268 14.9963Z" fill="white"/>
+                                    <path d="M9.14596 2.07906C9.34122 1.8838 9.6587 1.8838 9.85397 2.07906L13.7797 6.00485C13.975 6.20011 13.975 6.51759 13.7797 6.71285C13.5845 6.90779 13.2679 6.90781 13.0727 6.71285L9.49947 3.13961L5.92721 6.71285C5.73201 6.9078 5.41538 6.9078 5.22018 6.71285C5.02491 6.51759 5.02491 6.20011 5.22018 6.00485L9.14596 2.07906L9.49947 2.43258H9.50045L9.14596 2.07906Z" fill="white"/>
+                                    <path d="M9 11.8555V2.43262C9 2.15647 9.22386 1.93262 9.5 1.93262C9.77614 1.93262 10 2.15647 10 2.43262V11.8555C10 12.1316 9.77614 12.3555 9.5 12.3555C9.22386 12.3555 9 12.1316 9 11.8555Z" fill="white"/>
+                                </svg>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-item c-form-item-file circle">
+                        <label for="">大頭照</label>
+                        <div class="c-form-item-file__upload">
+                            <span>上傳</span>
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.93268 14.9963V11.8557C1.93268 11.5796 2.15654 11.3557 2.43268 11.3557C2.70882 11.3557 2.93268 11.5796 2.93268 11.8557V14.9963C2.93268 15.2803 3.04539 15.5534 3.24615 15.7542C3.44685 15.9547 3.71923 16.0676 4.00299 16.0676H14.9971C15.2809 16.0675 15.5533 15.9548 15.754 15.7542C15.9547 15.5534 16.0674 15.2803 16.0674 14.9963V11.8557C16.0674 11.5796 16.2913 11.3557 16.5674 11.3557C16.8435 11.3558 17.0674 11.5796 17.0674 11.8557V14.9963C17.0674 15.5455 16.8493 16.0729 16.461 16.4612C16.0728 16.8493 15.5461 17.0675 14.9971 17.0676H4.00299C3.45402 17.0676 2.92735 16.8493 2.53912 16.4612C2.15083 16.0729 1.93268 15.5455 1.93268 14.9963Z" fill="white"/>
+                                <path d="M9.14596 2.07906C9.34122 1.8838 9.6587 1.8838 9.85397 2.07906L13.7797 6.00485C13.975 6.20011 13.975 6.51759 13.7797 6.71285C13.5845 6.90779 13.2679 6.90781 13.0727 6.71285L9.49947 3.13961L5.92721 6.71285C5.73201 6.9078 5.41538 6.9078 5.22018 6.71285C5.02491 6.51759 5.02491 6.20011 5.22018 6.00485L9.14596 2.07906L9.49947 2.43258H9.50045L9.14596 2.07906Z" fill="white"/>
+                                <path d="M9 11.8555V2.43262C9 2.15647 9.22386 1.93262 9.5 1.93262C9.77614 1.93262 10 2.15647 10 2.43262V11.8555C10 12.1316 9.77614 12.3555 9.5 12.3555C9.22386 12.3555 9 12.1316 9 11.8555Z" fill="white"/>
+                            </svg>
+                            <input type="file">
+                        </div>
+                        <div class="c-form-item-file__pic">
+                            <div class="c-form-item-file__pic-main">
+                                <img src="https://images.unsplash.com/photo-1743784412612-668571c271bd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <div class="btn-upload">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.93268 14.9963V11.8557C1.93268 11.5796 2.15654 11.3557 2.43268 11.3557C2.70882 11.3557 2.93268 11.5796 2.93268 11.8557V14.9963C2.93268 15.2803 3.04539 15.5534 3.24615 15.7542C3.44685 15.9547 3.71923 16.0676 4.00299 16.0676H14.9971C15.2809 16.0675 15.5533 15.9548 15.754 15.7542C15.9547 15.5534 16.0674 15.2803 16.0674 14.9963V11.8557C16.0674 11.5796 16.2913 11.3557 16.5674 11.3557C16.8435 11.3558 17.0674 11.5796 17.0674 11.8557V14.9963C17.0674 15.5455 16.8493 16.0729 16.461 16.4612C16.0728 16.8493 15.5461 17.0675 14.9971 17.0676H4.00299C3.45402 17.0676 2.92735 16.8493 2.53912 16.4612C2.15083 16.0729 1.93268 15.5455 1.93268 14.9963Z" fill="white"/>
+                                    <path d="M9.14596 2.07906C9.34122 1.8838 9.6587 1.8838 9.85397 2.07906L13.7797 6.00485C13.975 6.20011 13.975 6.51759 13.7797 6.71285C13.5845 6.90779 13.2679 6.90781 13.0727 6.71285L9.49947 3.13961L5.92721 6.71285C5.73201 6.9078 5.41538 6.9078 5.22018 6.71285C5.02491 6.51759 5.02491 6.20011 5.22018 6.00485L9.14596 2.07906L9.49947 2.43258H9.50045L9.14596 2.07906Z" fill="white"/>
+                                    <path d="M9 11.8555V2.43262C9 2.15647 9.22386 1.93262 9.5 1.93262C9.77614 1.93262 10 2.15647 10 2.43262V11.8555C10 12.1316 9.77614 12.3555 9.5 12.3555C9.22386 12.3555 9 12.1316 9 11.8555Z" fill="white"/>
+                                </svg>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-fill-lg">儲存</button>
+        </form>
+
+        <div class="table">
+            <h2 class="table__title">證照</h2>
+            <div class="table__wrapper">
+                <div class="table__inner">
+                    <table class="table__main">
+                        <tr>
+                            <th><span>證照編號</span></th>
+                            <th><span>委辦編號</span></th>
+                            <th><span>類別</span></th>
+                            <th><span>發照日期</span></th>
+                            <th><span>類別</span></th>
+                            <th><span>證照留存</span></th>
+                            <th><span>備註</span></th>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>1234567</span></td>
+                            <td><span>1234567</span></td>
+                            <td><span>乙級</span></td>
+                            <td><span>1979/07/01</span></td>
+                            <td><span>冷凍空調裝修</span></td>
+                            <td class="td-sm"><span>無</span></td>
+                            <td class="td-lg"><span>木速空人廠一比是電知。可源計天，在自收和變，學國表地半過化年色景保家，保條不聞益全國國特國治古民</span></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>1234567</span></td>
+                            <td><span>1234567</span></td>
+                            <td><span>乙級</span></td>
+                            <td><span>1979/07/01</span></td>
+                            <td><span>冷凍空調裝修</span></td>
+                            <td class="td-sm"><span>無</span></td>
+                            <td class="td-lg"><span>木速空人廠一比是電知。可源計天，在自收和變，學國表地半過化年色景保家，保條不聞益全國國特國治古民</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="table">
+            <h2 class="table__title">聯絡人</h2>
+            <div class="table__wrapper">
+                <div class="table__inner has-func">
+                    <table class="table__main">
+                        <tr>
+                            <th><span>公司統一編號</span></th>
+                            <th><span>公司編號</span></th>
+                            <th><span>公司名稱</span></th>
+                            <th><span>公司電話</span></th>
+                            <th><span>公司傳真</span></th>
+                            <th><span>公司營業地址</span></th>
+                            <th><span>公司通訊地址</span></th>
+                            <th><span>負責人</span></th>
+                            <th><span>附回郵</span></th>
+                            <th><span>時間</span></th>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>1234567</span></td>
+                            <td><span>1234567</span></td>
+                            <td><span>均順機電有限公司</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)新北市板橋區自強新村68號(1樓)</span></td>
+                            <td><span>劉芳君</span></td>
+                            <td><span>無</span></td>
+                            <td><span>2025-01-02</span></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>1234567</span></td>
+                            <td><span>1234567</span></td>
+                            <td><span>均順機電有限公司</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td><span>02-1234567</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)</span></td>
+                            <td class="td-lg"><span>新北市板橋區自強新村68號(1樓)</span></td>
+                            <td><span>劉芳君</span></td>
+                            <td><span>無</span></td>
+                            <td><span>2025-01-02</span></td>
+                        </tr>
+                    </table>
+                    <table class="table__function">
+                        <tr class="table__function-th">
+                            <th><span>動作</span></th>
+                        </tr>
+                        <tr>
+                            <td class="c-table-btns">
+                                <div class="c-table-btns__wrapper">
+                                    <a href="" class="btn btn-light">修改</a>
+                                    <a href="" class="btn btn-light">刪除</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="c-table-btns">
+                                <div class="c-table-btns__wrapper">
+                                    <a href="" class="btn btn-light">修改</a>
+                                    <a href="" class="btn btn-light">刪除</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery-ui.min.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script>
+        $( function() {
+            $( "#birthday" ).datepicker();
+        } );
+    </script>
+</body>
+</html>
