@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委辦公司資訊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'uod5vgt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body class="theme-blue">
+    <header class="header">
+        <nav class="header__nav">
+            <ul>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title active">基本資料管理</p>
+                    <ul>
+                        <li><a href="" class="active">委辦公司資訊</a></li>
+                        <li><a href="">修改證照所有人資訊</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">委辦管理</p>
+                    <ul>
+                        <li><a href="">選項1</a></li>
+                        <li><a href="">選項2</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">報表管理</p>
+                    <ul>
+                        <li><a href="">選項1</a></li>
+                        <li><a href="">選項2</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">到期管理</p>
+                    <ul>
+                        <li><a href="">選項1</a></li>
+                        <li><a href="">選項2</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">歷史紀錄管理</p>
+                    <ul>
+                        <li><a href="">委辦公司紀錄內容</a></li>
+                        <li><a href="">選項2</a></li>
+                    </ul>
+                </li>
+                <!-- 加一個沒有子選單的 -->
+                <li class="c-header-nav-item">
+                    <p class="c-header-nav-item__title">沒有子選單</p>
+                </li>
+            </ul>
+        </nav>
+        <p class="header__user">Zoey</p>
+    </header>
+
+    <main class="main">
+        <div class="page-head">
+            <ul class="breadcrumb">
+                <li><a href="">基本資料管理</a></li>
+                <li><a href="" class="active">委辦公司資訊</a></li>
+            </ul>
+            <a href="" class="btn btn-fill-md">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19V5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19Z" fill="white"/>
+                    <path d="M19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H19Z" fill="white"/>
+                </svg>
+                <span>新增</span>
+            </a>
+        </div>
+
+        <div class="searchbar">
+            <div class="c-searchbar-radio">
+                <p>查詢條件</p>
+                <div class="c-searchbar-radio__content">
+                    <div class="c-searchbar-radio__item">
+                        <input type="radio" id="and" name="condition">
+                        <label for="and">AND</label>
+                    </div>
+                    <div class="c-searchbar-radio__item">
+                        <input type="radio" id="or" name="condition">
+                        <label for="or">OR</label>
+                    </div>
+                </div>
+            </div>
+            <div class="c-searchbar-input">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="c-searchbar-input__item">
+                            <label for="invoice">公司統編/編號</label>
+                            <input type="text" placeholder="請輸入" id="invoice">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="c-searchbar-input__item">
+                            <label for="company-name">公司名稱</label>
+                            <input type="text" placeholder="請輸入" id="company-name">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="c-searchbar-input__item">
+                            <label for="phone-num">公司電話</label>
+                            <input type="text" placeholder="請輸入" id="phone-num">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-fill-md">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11ZM20 11C20 15.9706 15.9706 20 11 20C6.02944 20 2 15.9706 2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11Z" fill="white"/>
+                    <path d="M15.9429 15.943C16.3334 15.5525 16.9665 15.5525 17.357 15.943L21.7066 20.2926C22.0971 20.6831 22.0971 21.3161 21.7066 21.7067C21.3161 22.0972 20.6831 22.0972 20.2925 21.7067L15.9429 17.357C15.5524 16.9665 15.5524 16.3335 15.9429 15.943Z" fill="white"/>
+                </svg>
+                <span>搜尋</span>
+            </button>
+        </div>
+
+        <table class="table"></table>
+    </main>
+</body>
+</html>
