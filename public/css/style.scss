@@ -377,7 +377,7 @@ a {
         }
     }
     &-input {
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         .row {
             margin-left: -12px;
             margin-right: -12px;
@@ -387,6 +387,7 @@ a {
             }
         }
         &__item {
+            margin-bottom: 30px;
             label {
                 display: block;
                 margin-bottom: 10px;

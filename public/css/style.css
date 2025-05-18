@@ -453,10 +453,6 @@ a {
   opacity: 0;
 }
 
-.c-searchbar-input {
-  margin-bottom: 30px;
-}
-
 .c-searchbar-input .row {
   margin-left: -12px;
   margin-right: -12px;
@@ -465,6 +461,10 @@ a {
 .c-searchbar-input .row > div {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.c-searchbar-input__item {
+  margin-bottom: 30px;
 }
 
 .c-searchbar-input__item label {
