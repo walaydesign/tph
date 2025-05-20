@@ -410,9 +410,18 @@ a {
 
 .table {
     padding-top: 60px;
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        gap: 15px;
+        .form-item__main {
+            width: 300px;
+        }
+    }
     &__total {
         font-size: $body-sm;
-        margin-bottom: 15px;
     }
     &__title {
         color: var(--color-dark);
