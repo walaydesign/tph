@@ -69,7 +69,7 @@ ul {
     margin: 0;
 }
 
-input, select {
+input, select, button {
     outline: none;
     background-color: transparent;
     border: 0;
@@ -581,9 +581,23 @@ a {
                 background-repeat: no-repeat;
             }
         }
+        &__verify {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .form-item__main {
+                width: calc(100% - 80px - 16px);
+                margin: 0;
+            }
+            .btn {
+                width: 80px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     }
-    .btn {
-        margin: 0 auto;
+    .btn-save {
+        margin: 40px auto 0;
     }
 }
 
@@ -706,6 +720,17 @@ a {
                     opacity: 0;
                 }
             }
+            .btn-delete {
+                padding: 0;
+                font-size: 16px;
+                position: absolute;
+                top: calc(100% + 15px);
+                color: #D51717;
+                transition: 0.3s;
+                &:hover {
+                    color: var(--color-dark);
+                }
+            }
         }
         &.idcard {
             .c-form-item-file__pic {
@@ -717,6 +742,9 @@ a {
                 .btn-upload {
                     right: 12px;
                     bottom: 12px;
+                }
+                .btn-delete {
+                    left: 0;
                 }
             }
         }
@@ -731,6 +759,10 @@ a {
                 .btn-upload {
                     right: 4px;
                     bottom: 9px;
+                }
+                .btn-delete {
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
             }
         }

@@ -71,8 +71,11 @@
             <div class="row">
                 <div class="col-4">
                     <div class="form-item">
-                        <label for="">勾選欄位</label>
-                        <input class="form-item__main" type="text" placeholder="請輸入">
+                        <label for="">身分證字號</label>
+                        <div class="form-item__verify">
+                            <input class="form-item__main" type="text" placeholder="請輸入">
+                            <button class="btn btn-fill-md"><span>驗證</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-4">
@@ -247,6 +250,7 @@
                                 </svg>
                                 <input type="file">
                             </div>
+                            <button class="btn-delete">刪除</button>
                         </div>
                     </div>
                 </div>
@@ -274,11 +278,12 @@
                                 </svg>
                                 <input type="file">
                             </div>
+                            <button class="btn-delete">刪除</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-fill-lg">儲存</button>
+            <button class="btn btn-fill-lg btn-save">儲存</button>
         </form>
 
         <div class="table">

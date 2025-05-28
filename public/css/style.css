@@ -58,7 +58,7 @@ ul {
   margin: 0;
 }
 
-input, select {
+input, select, button {
   outline: none;
   background-color: transparent;
   border: 0;
@@ -744,8 +744,29 @@ a {
   background-repeat: no-repeat;
 }
 
-.form .btn {
-  margin: 0 auto;
+.form-item__verify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.form-item__verify .form-item__main {
+  width: calc(100% - 80px - 16px);
+  margin: 0;
+}
+
+.form-item__verify .btn {
+  width: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form .btn-save {
+  margin: 40px auto 0;
 }
 
 .c-form-item-address {
@@ -913,6 +934,20 @@ a {
   opacity: 0;
 }
 
+.c-form-item-file__pic .btn-delete {
+  padding: 0;
+  font-size: 16px;
+  position: absolute;
+  top: calc(100% + 15px);
+  color: #D51717;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c-form-item-file__pic .btn-delete:hover {
+  color: var(--color-dark);
+}
+
 .c-form-item-file.idcard .c-form-item-file__pic-main {
   width: 100%;
   padding-bottom: 58%;
@@ -922,6 +957,10 @@ a {
 .c-form-item-file.idcard .c-form-item-file__pic .btn-upload {
   right: 12px;
   bottom: 12px;
+}
+
+.c-form-item-file.idcard .c-form-item-file__pic .btn-delete {
+  left: 0;
 }
 
 .c-form-item-file.circle {
@@ -939,6 +978,12 @@ a {
 .c-form-item-file.circle .c-form-item-file__pic .btn-upload {
   right: 4px;
   bottom: 9px;
+}
+
+.c-form-item-file.circle .c-form-item-file__pic .btn-delete {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .c-form-item-file.uploaded .c-form-item-file__upload {
