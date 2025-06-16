@@ -599,6 +599,13 @@ a {
     .btn-save {
         margin: 40px auto 0;
     }
+    &_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+    }
 }
 
 .c-form-item {
