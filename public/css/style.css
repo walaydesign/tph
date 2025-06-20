@@ -558,7 +558,7 @@ a {
 }
 
 .table th > span {
-  padding: 20px;
+  padding: 10px;
 }
 
 .table td {
@@ -567,7 +567,7 @@ a {
 }
 
 .table td > span {
-  padding: 30px 20px;
+  padding: 10px;
 }
 
 .table th > span, .table td > span {
