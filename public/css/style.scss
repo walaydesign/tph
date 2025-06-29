@@ -5,9 +5,9 @@ $white: #FFFFFF;
 $label: #717171;
 $line: #E7E7E7;
 $shadow-form: 0 3px 10px rgba(0,0,0,0.15);
-$body-md: 20px;
-$body-sm: 18px;
-$title-md: 40px;
+$body-md: 18px;
+$body-sm: 16px;
+$title-md: 32px;
 $transition: 0.3s;
 
 
@@ -105,7 +105,7 @@ a {
     top: 0;
     left: 0;
     background-color: $white;
-    height: 80px;
+    height: 70px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     padding: 0 40px;
     display: flex;
@@ -211,7 +211,7 @@ a {
 }
 
 .page-head {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -264,7 +264,7 @@ a {
     justify-content: center;
     gap: 10px;
     border-radius: 100px;
-    padding: 13px 25px;
+    padding: 8px 20px;
     transition: $transition;
     &-fill-md {
         background-color: var(--color-bright);
@@ -300,20 +300,21 @@ a {
         color: $white;
         transition: $transition;
         font-size: $body-md;
-        width: 160px;
+        width: 130px;
+        padding: 8px 0;
         &:hover {
             background-color: transparent;
             color: var(--color-bright);
         }
     }
     &-light {
-        padding: 12px 20px;
+        padding: 8px 15px;
         background-color: var(--color-light);
         color: var(--color-bright);
     }
     &-border {
         font-size: $body-sm;
-        padding: 14px 24px;
+        padding: 8px 15px;
         border: 1px solid var(--color-bright);
         color: var(--color-bright);
         transition: $transition;
@@ -325,11 +326,11 @@ a {
 }
 
 .searchbar {
-    padding: 30px;
+    padding: 20px;
     background-color: $white;
     box-shadow: $shadow-form;
-    border-radius: 30px;
-    margin-bottom: 40px;
+    border-radius: 25px;
+    margin-bottom: 20px;
     .btn {
         margin: 0 auto;
     }
@@ -377,7 +378,6 @@ a {
         }
     }
     &-input {
-        // margin-bottom: 30px;
         .row {
             margin-left: -12px;
             margin-right: -12px;
@@ -387,7 +387,7 @@ a {
             }
         }
         &__item {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             label {
                 display: block;
                 margin-bottom: 10px;
@@ -396,8 +396,8 @@ a {
             }
             input {
                 width: 100%;
-                height: 50px;
-                border-radius: 15px;
+                height: 43px;
+                border-radius: 10px;
                 padding: 0 15px;
                 border: 1px solid var(--color-lightgray);
                 &::placeholder {
@@ -409,7 +409,7 @@ a {
 }
 
 .table {
-    padding-top: 60px;
+    padding-top: 30px;
     &__head {
         display: flex;
         align-items: center;
@@ -448,23 +448,27 @@ a {
     th {
         background-color: var(--color-tablelight);
         color: var(--color-dark);
-        >span {
-            padding: 10px;
-        }
+        padding: 10px;
+        height: 45px;
     }
     td {
         background-color: $white;
         border-bottom: 1px solid var(--color-lightgray);
-        >span {
-            padding: 10px;
-        }
+        height: 70px;
+        padding: 0 10px;
     }
     th, td {
+        vertical-align: middle;
         >span {
-            display: flex;
-            height: 100%;
+            // display: flex;
             line-height: 1.4;
             white-space: nowrap;
+            // align-items: center;
+            // justify-content: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
         }
         &.td {
             &-lg {
@@ -493,7 +497,7 @@ a {
         display: flex;
         align-items: center;
         gap: 10px;
-        padding: 0 20px;
+        // padding: 0 20px;
     }
 }
 
@@ -557,7 +561,7 @@ a {
         }
     }
     &-item {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         label {
             display: block;
             color: $label;
@@ -566,10 +570,10 @@ a {
         }
         &__main {
             width: 100%;
-            border-radius: 15px;
+            border-radius: 10px;
             background-color: $white;
             padding: 0 15px;
-            height: 50px;
+            height: 43px;
             box-shadow: $shadow-form;
             &::placeholder {
                 color: var(--color-lightgray);
@@ -814,7 +818,7 @@ a {
         }
     }
     &__item {
-        padding: 12px 0;
+        padding: 8px 0;
         position: relative;
         display: flex;
         align-items: center;
@@ -852,7 +856,7 @@ a {
     background-color: $white;
     border-radius: 35px;
     box-shadow: $shadow-form;
-    padding: 30px 50px;
+    padding: 30px 25px;
     h1 {
         text-align: center;
         font-size: $title-md;
@@ -909,7 +913,7 @@ a {
 .expiration {
     max-width: 530px;
     width: 100%;
-    margin: 60px auto;
+    margin: 30px auto;
     &__btn {
         display: flex;
         align-items: center;
