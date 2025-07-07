@@ -419,6 +419,9 @@ a {
         .form-item__main {
             width: 300px;
         }
+        .table__title {
+            margin: 0;
+        }
     }
     &__total {
         font-size: $body-sm;
@@ -454,7 +457,7 @@ a {
     td {
         background-color: $white;
         border-bottom: 1px solid var(--color-lightgray);
-        height: 70px;
+        height: 60px;
         padding: 0 10px;
     }
     th, td {
@@ -469,6 +472,7 @@ a {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
             overflow: hidden;
+            text-align: center;
         }
         &.td {
             &-lg {
@@ -598,6 +602,9 @@ a {
                 padding-left: 0;
                 padding-right: 0;
             }
+        }
+        input {
+            margin-bottom: 10px;
         }
     }
     .btn-save {

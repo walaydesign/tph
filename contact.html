@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委辦公司資訊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'uod5vgt',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body class="theme-blue">
+    <header class="header">
+        <nav class="header__nav">
+            <ul>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title active">基本資料管理</p>
+                    <ul>
+                        <li><a href="">證照所有人</a></li>
+                        <li><a href="">證照</a></li>
+                        <li><a href="" class="active">委辦公司</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">委辦管理</p>
+                    <ul>
+                        <li><a href="">技士委辦</a></li>
+                        <li><a href="">公司委辦</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">報表管理</p>
+                    <ul>
+                        <li><a href="">公司委辦到期</a></li>
+                    </ul>
+                </li>
+                <li class="c-header-nav-item has-dropdown">
+                    <p class="c-header-nav-item__title">歷史紀錄管理</p>
+                    <ul>
+                        <li><a href="">證照所有人紀錄</a></li>
+                        <li><a href="">證照紀錄</a></li>
+                        <li><a href="">委辦公司紀錄</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <p class="header__user">Zoey</p>
+    </header>
+
+    <main class="main">
+
+        <div class="table">
+            <div class="table__head">
+                <h2 class="table__title">聯絡人</h2>
+                <input type="button" class="btn btn-fill-lg btn-save" value="新增" name="add" onclick="m('contact_add.php?cid=00219559&amp;insideid=O10');">
+            </div>
+            <div class="table__wrapper">
+                <div class="table__inner has-func">
+                    <table class="table__main">
+                        <tr>
+                            <th><span>姓名</span></th>
+                            <th><span>電話</span></th>
+                            <th><span>行動電話</span></th>
+                            <th><span>公司電話</span></th>
+                            <th><span>傳真</span></th>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>詹章誾**</span></td>
+                            <td><span>02-2965-0787</span></td>
+                            <td><span>0933-027-285</span></td>
+                            <td><span></span></td>
+                            <td><span>02-2965-0786</span></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td><span>陳's***</span></td>
+                            <td><span>02-2965-0787</span></td>
+                            <td><span></span></td>
+                            <td><span></span></td>
+                            <td><span>02-2965-0786</span></td>
+                        </tr>
+                    </table>
+                    <table class="table__function">
+                        <tr class="table__function-th">
+                            <th><span>動作</span></th>
+                        </tr>
+                        <tr>
+                            <td class="c-table-btns">
+                                <div class="c-table-btns__wrapper">
+                                    <a href="" class="btn btn-light">修改</a>
+                                    <button class="btn btn-light">刪除</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="c-table-btns">
+                                <div class="c-table-btns__wrapper">
+                                    <a href="" class="btn btn-light">修改</a>
+                                    <button class="btn btn-light">刪除</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery-ui.min.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script src="./public/js/table.js"></script>
+</body>
+</html>

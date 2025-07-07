@@ -521,6 +521,10 @@ a {
   width: 300px;
 }
 
+.table__head .table__title {
+  margin: 0;
+}
+
 .table__total {
   font-size: 16px;
 }
@@ -563,7 +567,7 @@ a {
 .table td {
   background-color: #FFFFFF;
   border-bottom: 1px solid var(--color-lightgray);
-  height: 70px;
+  height: 60px;
   padding: 0 10px;
 }
 
@@ -578,6 +582,7 @@ a {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  text-align: center;
 }
 
 .table th.td-lg, .table td.td-lg {
@@ -763,6 +768,10 @@ a {
   width: 80px;
   padding-left: 0;
   padding-right: 0;
+}
+
+.form-item input {
+  margin-bottom: 10px;
 }
 
 .form .btn-save {
