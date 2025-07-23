@@ -36,7 +36,7 @@ body {
   background-color: var(--color-bg);
   &.theme {
     &-green {
-      --color-light: #f1f6ef;
+      --color-light: #e3f2dd;
       --color-dark: #22600d;
       --color-bright: #64af35;
       --color-bg: #f9fdf7;
@@ -48,7 +48,7 @@ body {
       --datepick-icon: url(../img/calendar-green.svg);
     }
     &-blue {
-      --color-light: #f1f8ff;
+      --color-light: #deeeff;
       --color-dark: #245688;
       --color-bright: #0082e0;
       --color-bg: #f1f8ff;
