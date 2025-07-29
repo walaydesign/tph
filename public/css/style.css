@@ -97,6 +97,10 @@ a {
   color: #c60000;
 }
 
+.color-red * {
+  color: #c60000 !important;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -817,6 +821,7 @@ a {
 
 .form--intrust .form_btn {
   margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .c-form-item-address {

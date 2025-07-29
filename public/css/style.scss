@@ -102,6 +102,9 @@ a {
 
 .color-red {
   color: #c60000;
+  * {
+    color: #c60000 !important;
+  }
 }
 
 .header {
@@ -634,6 +637,7 @@ a {
     }
     .form_btn {
       margin-top: 0px;
+      margin-bottom: 40px;
     }
   }
 }
