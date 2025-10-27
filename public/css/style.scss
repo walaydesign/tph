@@ -727,6 +727,7 @@ a {
         box-shadow: $shadow-form;
         overflow: hidden;
         position: relative;
+        display: block;
         > img {
           position: absolute;
           object-fit: cover;
