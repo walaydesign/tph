@@ -994,7 +994,7 @@ a {
   padding: 0;
   font-size: 16px;
   position: absolute;
-  top: calc(100% + 15px);
+  bottom: 0;
   color: #d51717;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1012,7 +1012,7 @@ a {
 
 .c-form-item-file.idcard .c-form-item-file__pic .btn-upload {
   right: 12px;
-  bottom: 12px;
+  bottom: 40px;
 }
 
 .c-form-item-file.idcard .c-form-item-file__pic .btn-delete {
@@ -1048,6 +1048,7 @@ a {
 
 .c-form-item-file.uploaded .c-form-item-file__pic {
   display: block;
+  padding-bottom: 30px;
 }
 
 .c-form-item-duration {

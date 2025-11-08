@@ -766,7 +766,8 @@ a {
         padding: 0;
         font-size: 16px;
         position: absolute;
-        top: calc(100% + 15px);
+        // top: calc(100% + 15px);
+        bottom: 0;
         color: #d51717;
         transition: 0.3s;
         &:hover {
@@ -783,7 +784,7 @@ a {
         }
         .btn-upload {
           right: 12px;
-          bottom: 12px;
+          bottom: 40px;
         }
         .btn-delete {
           left: 0;
@@ -815,6 +816,7 @@ a {
         }
         &__pic {
           display: block;
+          padding-bottom: 30px;
         }
       }
     }
